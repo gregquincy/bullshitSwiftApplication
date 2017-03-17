@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2104208CCB95A92A6E47C00AD6B9548833DE4978",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B6E16A6BE5489C8A768B73EF44C6CBBE77F988FD" : 9223372036854775807,
+    "2104208CCB95A92A6E47C00AD6B9548833DE4978" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2130F6AD-1353-40F3-A99A-40D0C706C98A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B6E16A6BE5489C8A768B73EF44C6CBBE77F988FD" : "bullshitSwiftApplication\/Libraries\/Siesta\/",
+    "2104208CCB95A92A6E47C00AD6B9548833DE4978" : "bullshitSwiftApplication\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Tempest",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Tempest.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gregquincy\/bullshitSwiftApplication.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2104208CCB95A92A6E47C00AD6B9548833DE4978"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bustoutsolutions\/siesta.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B6E16A6BE5489C8A768B73EF44C6CBBE77F988FD"
+    }
+  ]
+}
