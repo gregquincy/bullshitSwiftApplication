@@ -9,8 +9,7 @@
 import Foundation
 import Alamofire
 
-class dclj : SessionManager {
-       
+class dclj : SessionManager {       
     public func setToken(_ token: String) {
         self.adapter = AccessTokenAdapter(accessToken: token)
     }
@@ -20,11 +19,11 @@ class Router : URLRequestConvertible {
     
     let baseURLString = "http://swift.archloy.xyz"
     
-    private var endpoint :String = "auth"
+    private var endpoint :String
     private var method :HTTPMethod
     private var parameters :Parameters?
     
-    init(endpoint: String, method: HTTPMethod = .get, parameters: Parameters? = nil) {
+    init(_ endpoint: String, _ method: HTTPMethod = .get, _ parameters: Parameters? = nil) {
         self.endpoint = endpoint
         self.method = method
         self.parameters = parameters
