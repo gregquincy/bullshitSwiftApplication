@@ -70,10 +70,10 @@ struct User: ResponseObjectSerializable, CustomStringConvertible {
         self.name = name
     }
     
-    public func getReports()
+    public func getReports(lat: String, lon: String)
     {
-        let param :Parameters = [:]
-        api.request("/reports/", .get, param).responseJSON{ response in
+        let param :Parameters = ["lat":lat, "lon":lon]
+        api.req("/reports/", .get, param).responseJSON{ response in
             switch response.result {
                 case .success:
                     print("Validation Successful")

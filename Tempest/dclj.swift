@@ -24,7 +24,7 @@ class AccessTokenAdapter: RequestAdapter {
             urlRequest.setValue("Token " + accessToken, forHTTPHeaderField: "Authorization")
         }
         return urlRequest
-    }
+    }	
 }
 
 
@@ -37,7 +37,7 @@ class dclj : SessionManager {
     public func auth(username: String, password: String, callback: @escaping (Bool)->()) {
         let param :Parameters = ["username":username, "password":password]
         
-        api.request("/auth/", .post, param).responseJSON{ response in
+        self.req("/auth/", .post, param).responseJSON{ response in
             debugPrint(response)
             switch response.result {
                 case .success:
@@ -53,7 +53,7 @@ class dclj : SessionManager {
         }
     }
     
-    func request(_ endpoint: String, _ method: HTTPMethod, _ parameters: Parameters? = nil) -> DataRequest {
+    func req(_ endpoint: String, _ method: HTTPMethod = .get, _ parameters: Parameters? = nil) -> DataRequest {
         return super.request(Router(endpoint, method, parameters))
     }
 }
@@ -78,10 +78,9 @@ class Router : URLRequestConvertible {
         let url = try self.baseURLString.asURL()
         
         var urlRequest = URLRequest(url: url.appendingPathComponent(self.endpoint))
-        
+        debugPrint(url)
         urlRequest.httpMethod = self.method.rawValue
         urlRequest = try URLEncoding.default.encode(urlRequest, with: self.parameters)
-
         return urlRequest
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class AuthViewController: UIViewController {
     
@@ -16,7 +17,16 @@ class AuthViewController: UIViewController {
 
         api.auth(username: "user", password: "password") { (success) in
             if success {
-                // DO  SOMETHING
+                let param :Parameters = ["lat":"0", "lon":"0"]
+                api.req("/reports/", .get, param).responseJSON{ response in
+                    switch response.result {
+                    case .success:
+                        debugPrint(response)
+                        print("Validation Successful")
+                    case .failure(let error):
+                        print(error)
+                    }
+                }
             } else {
                 return;
             }
