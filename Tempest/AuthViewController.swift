@@ -13,17 +13,14 @@ class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let session = URLSession(configuration: URLSessionConfiguration.default)
-        
-        let request = URLRequest(url: NSURL(string: "http://127.0.0.1:8000/")! as URL)
-        
-        let task: URLSessionDataTask = session.dataTask(with: request) { (data, response, error) -> Void in
-            if let data = data {
-                let response = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
-                print(response)
+
+        api.auth(username: "user", password: "password") { (success) in
+            if success {
+                // DO  SOMETHING
+            } else {
+                return;
             }
         }
-        task.resume()
     }
     
     override func didReceiveMemoryWarning() {

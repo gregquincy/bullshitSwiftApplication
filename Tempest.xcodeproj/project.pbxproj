@@ -10,6 +10,7 @@
 		07D28920EB6F2F7FAE1031ED /* Pods_Tempest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A09EA3EACD763E209656EE /* Pods_Tempest.framework */; };
 		8B4D91571E83CB63007A8A65 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B4D91551E83CB63007A8A65 /* AuthViewController.swift */; };
 		8B4D91581E83CB63007A8A65 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B4D91561E83CB63007A8A65 /* AuthViewController.xib */; };
+		8B6094311E8516F000A8C443 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6094301E8516F000A8C443 /* Models.swift */; };
 		8B9B96C71E8481A800FAC4F2 /* dclj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9B96C61E8481A800FAC4F2 /* dclj.swift */; };
 		F9934E2B1E7ACCD700D19409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9934E2A1E7ACCD700D19409 /* AppDelegate.swift */; };
 		F9934E301E7ACCD700D19409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9934E2E1E7ACCD700D19409 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		52A09EA3EACD763E209656EE /* Pods_Tempest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tempest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4D91551E83CB63007A8A65 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		8B4D91561E83CB63007A8A65 /* AuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		8B6094301E8516F000A8C443 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		8B9B96C61E8481A800FAC4F2 /* dclj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dclj.swift; sourceTree = "<group>"; };
 		C1E2CFFB8E04D70DDD45612D /* Pods-Tempest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempest.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tempest/Pods-Tempest.release.xcconfig"; sourceTree = "<group>"; };
 		F9934E271E7ACCD700D19409 /* Tempest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tempest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +101,7 @@
 				F9934E361E7ACCD700D19409 /* Info.plist */,
 				8B4D91551E83CB63007A8A65 /* AuthViewController.swift */,
 				8B4D91561E83CB63007A8A65 /* AuthViewController.xib */,
+				8B6094301E8516F000A8C443 /* Models.swift */,
 			);
 			path = Tempest;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				8B4D91571E83CB63007A8A65 /* AuthViewController.swift in Sources */,
 				8B9B96C71E8481A800FAC4F2 /* dclj.swift in Sources */,
 				F9934E431E7AF62E00D19409 /* ReportFormViewController.swift in Sources */,
+				8B6094311E8516F000A8C443 /* Models.swift in Sources */,
 				F9934E411E7AE55100D19409 /* MainViewController.swift in Sources */,
 				F9934E2B1E7ACCD700D19409 /* AppDelegate.swift in Sources */,
 			);
